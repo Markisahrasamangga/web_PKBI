@@ -1,0 +1,202 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.mentor-hero-bg {
+  background: linear-gradient(180deg, #1a3d2c 0%, #3b7c5a 100%);
+  border-bottom-left-radius: 50% 30%;
+  border-bottom-right-radius: 50% 30%;
+  min-height: 220px;
+  position: relative;
+  z-index: 1;
+}
+
+.mentor-navbar-space {
+  height: 60px;
+}
+
+.mentor-hero-card {
+  width: 85%;
+  max-width: 1200px;
+  height: 300px;
+  background: #dbdbdb;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 12px #0001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor-main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+.mentor-intro {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mentor-intro h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #1a3d2c;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.mentor-intro p {
+  flex: 1 1 350px;
+  color: #1a3d2c;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.mentor-register-btn {
+  background: #1a3d2c;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mentor-register-btn:hover {
+  background: #39644e;
+}
+
+.mentor-cards {
+  margin-top: 30px;
+}
+
+.mentor-card,
+.mentor-card-wide {
+  background: #fff;
+  border: 3px solid #1a3d2c;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  box-shadow: 0 2px 8px #0001;
+  overflow: hidden;
+}
+
+.mentor-card-wide {
+  min-height: 180px;
+}
+
+.mentor-card-img {
+  background: #6e9277;
+  min-width: 260px;
+  min-height: 160px;
+  max-width: 260px;
+  max-height: 160px;
+  border-radius: 14px;
+  margin: 20px;
+}
+
+.mentor-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px 20px 0;
+}
+
+.mentor-card-content h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #1a3d2c;
+  margin-bottom: 4px;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.mentor-card-name {
+  font-weight: bold;
+  color: #1a3d2c;
+  margin-bottom: 2px;
+  font-size: 1em;
+}
+
+.mentor-card-desc {
+  font-size: 0.95em;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.mentor-read-btn {
+  background: #1a3d2c;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 40px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: flex-end;
+  transition: background 0.2s;
+}
+
+.mentor-read-btn:hover {
+  background: #39644e;
+}
+
+.mentor-card-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.mentor-card-row .mentor-card {
+  flex: 1 1 0;
+  min-width: 280px;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .mentor-hero-card {
+    height: 180px;
+    margin-top: -30px;
+  }
+  .mentor-card-img,
+  .mentor-card-row .mentor-card .mentor-card-img {
+    min-width: 120px;
+    min-height: 80px;
+    max-width: 120px;
+    max-height: 80px;
+    margin: 10px;
+  }
+  .mentor-card-content {
+    padding: 10px 10px 10px 0;
+  }
+  .mentor-card-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .mentor-card,
+  .mentor-card-wide {
+    flex-direction: row;
+    min-height: 0;
+  }
+  .mentor-main {
+    width: 98%;
+  }
+}
